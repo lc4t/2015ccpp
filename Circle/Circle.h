@@ -1,23 +1,24 @@
 /*
  * Circle.h
  *
- *  Created on: 2015年5月5日
+ *  Created on: 2015年5月7日
  *      Author: lc4t
  */
 
-#ifndef CIRCLE_H_
-#define CIRCLE_H_
+#ifndef Circle_H_
+#define Circle_H_
 #include "Point.h"
-class Circle {
+class Circle:private Point {
+// This Circle is inherit from Point with Private
 public:
-	Circle(Point &c, int r);
-	void move(int offsetX, int offsetY);
-	Point getCenter();
+	Circle();
+	Circle(int cx, int cy, int r);
+	int getX2();
+	int getY2();
+	void move2(int offsetX, int offsetY);
 	virtual ~Circle();
 private:
 	int x,y,r;
-	Point point;
 };
 
-
-#endif /* CIRCLE_H_ */
+#endif /* Circle_H_ */

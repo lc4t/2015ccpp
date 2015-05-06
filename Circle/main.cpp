@@ -5,9 +5,8 @@
 using namespace std;
 int main(int argv, char const *argc[])
 {
-	Point center(10,20);
-	Circle circle(center,5);
-	circle.move(30,20);
-	cout<<circle.getCenter().getX()<<","<<circle.getCenter().getY()<<endl;
+	Circle circle(10,20,5);
+	circle.move2(30,20);
+	cout<<circle.getX2()<<","<<circle.getY2()<<endl;
 	return 0;
 }
