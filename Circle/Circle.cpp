@@ -6,44 +6,14 @@
  */
 
 #include "Circle.h"
-
-Circle::Circle() {
-	// TODO Auto-generated constructor stub
-
-}
-
-Circle::Circle(int cx,int cy, int r) {
-//	x = cx;
-//	y = cy;
-	this->r = r;
-	setx(cx);
-	sety(cy);
-//	setR(r);
-
-}
-
-
-
-
 Circle::~Circle() {
-	// TODO Auto-generated constructor stub
+    // TODO Auto-generated constructor stub
 
 }
 
 
-int Circle::getX2()
-{
-//	return x;
-	return getX();
-}
 
-int Circle::getY2()
+void Circle::move(int offsetX, int offsetY)
 {
-//	return y;
-	return getY();
-}
-
-void Circle::move2(int offsetX, int offsetY)
-{
-	move(offsetX,offsetY);
+    Point::move(offsetX, offsetY);
 }

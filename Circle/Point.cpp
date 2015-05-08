@@ -6,33 +6,12 @@
  */
 
 #include "Point.h"
-Point::Point()
-{
-	x = 0;
-	y = 0;
-}
 
-Point::Point(int cx, int cy) {
 
-	x = cx;
-	y = cy;
-}
 Point::~Point()
 {
 
 }
-
-void Point::setx(int cx)
-{
-	this->x = cx;
-}
-
-
-void Point::sety(int cy)
-{
-	this->y = cy;
-}
-
 
 void Point::move(int offsetX,int offsetY)
 {

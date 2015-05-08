@@ -10,16 +10,13 @@
 
 class Point {
 public:
-	Point();
-	Point(int cx, int cy);
-	void setx(int cx);
-	void sety(int cy);
-	int getX();
-	int getY();
-	void move(int offsetX,int offsetY);
-	virtual ~Point();
+    Point(int x, int y):x(x),y(y){};
+    int getX();
+    int getY();
+    void move(int offsetX,int offsetY);
+    virtual ~Point();
 private:
-	int x,y;
+    int x,y;
 };
 
 #endif /* POINT_H_ */

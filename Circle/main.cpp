@@ -5,8 +5,11 @@
 using namespace std;
 int main(int argv, char const *argc[])
 {
-	Circle circle(10,20,5);
-	circle.move2(30,20);
-	cout<<circle.getX2()<<","<<circle.getY2()<<endl;
-	return 0;
+
+    Circle c(10,20,5);
+    c.move(30,20);
+    cout<<c.getCenter().getX()<<","<<c.getCenter().getY()<<endl;
+
+
+    return 0;
 }

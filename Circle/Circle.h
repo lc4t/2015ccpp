@@ -11,14 +11,12 @@
 class Circle:private Point {
 // This Circle is inherit from Point with Private
 public:
-	Circle();
-	Circle(int cx, int cy, int r);
-	int getX2();
-	int getY2();
-	void move2(int offsetX, int offsetY);
-	virtual ~Circle();
+    Circle(int x, int y, int r):Point(x,y),r(r){};
+    void move(int offsetX, int offsetY);
+    Point& getCenter(){return *this;};
+    virtual ~Circle();
 private:
-	int x,y,r;
+    int r;
 };
 
 #endif /* Circle_H_ */
