@@ -14,13 +14,10 @@ Rectangle::Rectangle(int x, int y, int length, int width) {
 	this->y = y;
 	this->length = length;
 	this->width = width;
+	shapeName = "Rectangle";
 }
 
 
-void Rectangle::drawSelf()
-{
-	cout<<"Draw a Rectangle"<<endl;
-}
 
 Rectangle::~Rectangle() {
 	// TODO Auto-generated destructor stub

@@ -11,7 +11,6 @@
 class Rectangle:public Shape {
 public:
 	Rectangle(int x, int y, int length, int width);
-	void drawSelf();
 	virtual ~Rectangle();
 private:
 	int x,y,length,width;

@@ -6,8 +6,7 @@
  */
 
 #include "Shape.h"
-#include <iostream>
-using namespace std;
+#include <string>
 Shape::Shape() {
 	// TODO Auto-generated constructor stub
 
@@ -17,7 +16,7 @@ Shape::~Shape() {
 	// TODO Auto-generated destructor stub
 }
 
-void Shape::drawBase()
+std::string Shape::drawBase()
 {
-	std::cout << "draw ok"<<endl;
+	return shapeName;
 }

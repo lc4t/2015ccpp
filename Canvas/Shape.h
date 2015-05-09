@@ -7,13 +7,14 @@
 
 #ifndef SHAPE_H_
 #define SHAPE_H_
-
+#include <string>
 class Shape {
 public:
 	Shape();
-	void drawBase();
+	std::string drawBase();
 	virtual ~Shape();
-	void drawSelf(){};
+protected:
+	std::string shapeName;
 };
 
 #endif /* SHAPE_H_ */

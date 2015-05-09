@@ -13,12 +13,9 @@ Circle::Circle(int x, int y, int r) {
 	this->x = x;
 	this->y = y;
 	this->r = r;
+	shapeName = "Circle";
 }
 
-void Circle::drawSelf()
-{
-	cout<<"Draw a Rectangle"<<endl;
-}
 
 Circle::~Circle() {
 	// TODO Auto-generated destructor stub

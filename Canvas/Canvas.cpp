@@ -28,7 +28,7 @@ void Canvas::draw()
 	for (vector<Shape*>::iterator i = shapes.begin();i != shapes.end(); i++)
 
 	{
-		(*i)->drawBase();// only can visit Shape
+		cout<<"You draw a "<<(*i)->drawBase()<<" Done\n";// only can visit Shape
 	}
 
 }

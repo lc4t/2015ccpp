@@ -11,7 +11,6 @@
 class Circle:public Shape{
 public:
 	Circle(int x, int y, int r);
-	void drawSelf();
 	virtual ~Circle();
 private:
 	int x,y,r;
