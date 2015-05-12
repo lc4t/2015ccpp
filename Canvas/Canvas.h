@@ -15,6 +15,7 @@ class Canvas {
 public:
 	Canvas();
 	void append(Shape* s);
+	void getAllArea();
 	virtual ~Canvas();
 	void draw();
 private:

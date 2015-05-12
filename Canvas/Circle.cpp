@@ -13,9 +13,13 @@ Circle::Circle(int x, int y, int r) {
 	this->x = x;
 	this->y = y;
 	this->r = r;
-	shapeName = "Circle";
+	type = "Circle";
 }
 
+int Circle::getArea()
+{
+	return 3 * r * r;
+}
 
 Circle::~Circle() {
 	// TODO Auto-generated destructor stub

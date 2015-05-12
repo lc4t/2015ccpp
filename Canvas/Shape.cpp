@@ -18,5 +18,11 @@ Shape::~Shape() {
 
 std::string Shape::drawBase()
 {
-	return shapeName;
+	return type;
+}
+
+
+std::string Shape::getType()
+{
+	return type;
 }

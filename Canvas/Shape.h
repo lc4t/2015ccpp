@@ -12,9 +12,10 @@ class Shape {
 public:
 	Shape();
 	std::string drawBase();
+	std::string getType();
 	virtual ~Shape();
 protected:
-	std::string shapeName;
+	std::string type;
 };
 
 #endif /* SHAPE_H_ */

@@ -16,6 +16,7 @@ int main(int argc, const char *argv[])
 	canvas.append(&c2);
 
 	canvas.draw();
+	canvas.getAllArea();
 
 	return 0;
 }

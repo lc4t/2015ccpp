@@ -14,10 +14,13 @@ Rectangle::Rectangle(int x, int y, int length, int width) {
 	this->y = y;
 	this->length = length;
 	this->width = width;
-	shapeName = "Rectangle";
+	type = "Rectangle";
 }
 
-
+int Rectangle::getArea()
+{
+	return x * y;
+}
 
 Rectangle::~Rectangle() {
 	// TODO Auto-generated destructor stub

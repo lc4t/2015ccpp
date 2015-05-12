@@ -32,3 +32,22 @@ void Canvas::draw()
 	}
 
 }
+
+
+void Canvas::getAllArea()
+{
+	int sumArea = 0;
+	for (vector<Shape*>::iterator i = shapes.begin();i != shapes.end(); i++)
+	{
+		std::string type = (*i)->getType();
+		if (type == "Circle")
+		{
+			sumArea += ((Circle*)(*i))->getArea();
+		}
+		else if (type == "Regtangle")
+		{
+			sumArea += ((Rectangle*)(*i))->getArea();
+		}
+	}
+	cout<<"All area is "<<sumArea<<"\n";
+}
