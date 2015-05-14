@@ -14,8 +14,6 @@ public:
 	void on();
 	void off();
 	virtual ~Lamp();
-private:
-	std::string componentName;
 };
 
 #endif /* LAMP_H_ */

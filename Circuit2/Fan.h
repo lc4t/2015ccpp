@@ -7,16 +7,13 @@
 
 #ifndef FAN_H_
 #define FAN_H_
-#include "Component.h"
-class Fan : public Component
-{
+
+class Fan : public Component{
 public:
 	Fan();
 	void on();
 	void off();
 	virtual ~Fan();
-private:
-	std::string componentName;
 };
 
 #endif /* FAN_H_ */

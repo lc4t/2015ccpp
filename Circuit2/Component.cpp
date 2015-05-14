@@ -1,29 +1,30 @@
 /*
- * Lamp.cpp
+ * Component.cpp
  *
  *  Created on: 2015年5月12日
  *      Author: lc4t
  */
 
-#include "Lamp.h"
+#include "Component.h"
 #include <iostream>
 using namespace std;
-Lamp::Lamp() {
+Component::Component() {
 	// TODO Auto-generated constructor stub
-	componentName = "Lamp";
+
 }
 
-Lamp::~Lamp() {
+Component::~Component() {
 	// TODO Auto-generated destructor stub
 }
 
-void Lamp::on()
+
+void Component::on()
 {
-	cout<<componentName<<" is on\n";
+	cout<<"No componet to on\n";
 }
 
-void Lamp::off()
-{
-	cout<<componentName<<" is off\n";
-}
 
+void Component::off()
+{
+	cout<<"No componet to off\n";
+}

@@ -6,8 +6,7 @@
  */
 
 #include "Lamp.h"
-#include <iostream>
-using namespace std;
+
 Lamp::Lamp() {
 	// TODO Auto-generated constructor stub
 	componentName = "Lamp";
@@ -17,13 +16,12 @@ Lamp::~Lamp() {
 	// TODO Auto-generated destructor stub
 }
 
-void Lamp::on()
+void Fan::on()
 {
-	cout<<componentName<<" is on\n";
+	std::cout<<componentName<<" is on\n";
 }
 
-void Lamp::off()
+void Fan::off()
 {
-	cout<<componentName<<" is off\n";
+	std::cout<<componentName<<" is off\n";
 }
-

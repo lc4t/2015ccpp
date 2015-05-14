@@ -2,8 +2,6 @@
 using namespace std;
 #include "Circuit.h"
 #include "Button.h"
-#include "Fan.h"
-#include "Lamp.h"
 int main(int argc,const char *argv[])
 {
 	Circuit circuit;
@@ -13,7 +11,7 @@ int main(int argc,const char *argv[])
 	Button button;
 
 	circuit.setSwitch(&button);
-	circuit.append(&lamp);
+	circuit.append(*lamp);
 	circuit.append(&fan);
 
 	button.on();

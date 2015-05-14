@@ -7,7 +7,6 @@
 
 #include "Circuit.h"
 #include <vector>
-#include "Button.h"
 using namespace std;
 Circuit::Circuit() {
 	// TODO Auto-generated constructor stub
@@ -24,18 +23,10 @@ Circuit::~Circuit() {
 void Circuit::append(Component* c)
 {
 	components.push_back(c);
-	button->setComponents(components);
 }
 
-void Circuit::setSwitch(Button* b)
+void Circuit::setSwitch(Button* b);
 {
-//	button = new button(components);
 	button = b;
-	button->setComponents(components);
 }
 
-
-Button* Circuit::useButton()
-{
-	return button;
-}

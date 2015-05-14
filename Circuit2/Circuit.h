@@ -15,7 +15,6 @@ public:
 	Circuit();
 	void append(Component* c);
 	void setSwitch(Button* b);
-	Button* useButton();
 	void on();
 	void off();
 	virtual ~Circuit();
